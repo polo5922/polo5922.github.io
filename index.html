@@ -11,14 +11,6 @@
     </div>
     <div id="MainSceen">
       <ul>
-        <?php
-        $dir = new DirectoryIterator("project/");
-        foreach ($dir as $fileinfo) {
-            if ($fileinfo->isDir() && !$fileinfo->isDot()) {
-                echo $fileinfo->getFilename().'<br>';
-            }
-        }
-         ?>
         <a href="CodeIdle/index.html"><li>CodeIdle</li></a>
       </ul>
     </div>
