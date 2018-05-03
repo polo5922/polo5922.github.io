@@ -54,6 +54,8 @@
         <div class="section" >
           <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
              <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">My project</h1>
+             <div class="arrow-slide arrow-first"></div>
+             <div class="arrow-slide arrow-second"></div>
            </div>
         	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
              <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">CodeIdle</h1>
@@ -63,6 +65,25 @@
                </span>
                <span>View on GitHub</span>
              </a>
+           </div>
+        </div>
+        <div class="section" >
+          <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
+             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">Statistic</h1>
+           </div>
+        	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
+            <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;" id="visits">number of visits</h1>
+            <script type="text/javascript">
+            if (localStorage.pagecount)
+            {
+            localStorage.pagecount=Number(localStorage.pagecount) +1;
+            }
+            else
+            {
+            localStorage.pagecount=1;
+            }
+            document.getElementById("visits").innerHTML= "Visits: " + localStorage.pagecount + " time(s).";
+            </script>
            </div>
         </div>
       </div>
