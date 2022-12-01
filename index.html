@@ -1,91 +1,37 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>polo5922 project</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fullpage.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/fullpage.js" charset="utf-8"></script>
-    <script src="js/main.js" charset="utf-8"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
   </head>
   <body>
-      <div id="fullpage">
-      	<div class="section" style="background-color:#10ad29;">
-          <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">Polo5922 web page</h1>
-            <div class="arrow arrow-first"></div>
-            <div class="arrow arrow-second"></div>
-        </div>
-      	<div class="section" >
-          <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">My games</h1>
-             <div class="arrow-slide arrow-first"></div>
-             <div class="arrow-slide arrow-second"></div>
-           </div>
-        	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">CodeIdle</h1>
-             <a class="button is-large github" href="https://github.com/polo5922/CodeIdle">
-               <span class="icon is-medium">
-                 <i class="fab fa-github"></i>
-               </span>
-               <span>View on GitHub</span>
-             </a>
-           </div>
-        </div>
-        <div class="section" >
-          <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">My utilities</h1>
-             <div class="arrow-slide arrow-first"></div>
-             <div class="arrow-slide arrow-second"></div>
-           </div>
-        	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">CodeIdle</h1>
-             <a class="button is-large github" href="https://github.com/polo5922/CodeIdle">
-               <span class="icon is-medium">
-                 <i class="fab fa-github"></i>
-               </span>
-               <span>View on GitHub</span>
-             </a>
-           </div>
-        </div>
-        <div class="section" >
-          <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">My project</h1>
-             <div class="arrow-slide arrow-first"></div>
-             <div class="arrow-slide arrow-second"></div>
-           </div>
-        	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">CodeIdle</h1>
-             <a class="button is-large github" href="https://github.com/polo5922/CodeIdle">
-               <span class="icon is-medium">
-                 <i class="fab fa-github"></i>
-               </span>
-               <span>View on GitHub</span>
-             </a>
-           </div>
-        </div>
-        <div class="section" >
-          <div class="slide" data-anchor="slide1" style="background-color:#ad8a10;">
-             <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;">Statistic</h1>
-           </div>
-        	<div class="slide" data-anchor="slide2" style="background-color:#1fe21e;">
-            <h1 style="text-align:center;color:#ffffff;font-size:50px;font-family:'Roboto',sans-serif;" id="visits">number of visits</h1>
-            <script type="text/javascript">
-            if (localStorage.pagecount)
-            {
-            localStorage.pagecount=Number(localStorage.pagecount) +1;
-            }
-            else
-            {
-            localStorage.pagecount=1;
-            }
-            document.getElementById("visits").innerHTML= "Visits: " + localStorage.pagecount + " time(s).";
-            </script>
-           </div>
-        </div>
+    <header>
+      <div class="title">
+        <div class="circle"></div>
+        <span>Paul</span>
       </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="first-grid">
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+      <div class="second-grid">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </main>
   </body>
 </html>

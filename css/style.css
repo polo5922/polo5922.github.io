@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+
+header {
+    margin: 10px;
+    width: calc(100%-20px);
+    height: 30px;
+    display: flex;
+}
+
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+}
+
+nav li a {
+    display: block;
+    padding: 0 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+
+nav li a:hover {
+    color: #000;
+}
+
+nav li a.active {
+    font-weight: 800;
+}
+
+.title {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.title .circle {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background: rgb(11, 48, 255);
+    border-radius: 50%;
+    float: left;
+}
+
+.card {
+    margin: 10px;
+    width: calc(100%-20px);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .first-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .first-grid {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-gap: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .second-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 10px;
+    }
+
+}
+
+.first-grid>div:nth-child(2) {
+    background-color: red;
+}
